@@ -4,6 +4,7 @@ export default defineConfig(({command,mode})=>{
     const env = loadEnv(mode,process.cwd(),'');
     console.log(import.meta.env,process.cwd());
     return {
+        base:'/vite-github/',
         // clearScreen:true,
         // envPrefix:"APP_"
         server:{
